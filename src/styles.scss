@@ -1,1 +1,72 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+body {
+    --primary: #0094ff;
+    --primary-dark: #0082e0;
+    --primary-light: #1a9fff;
+  
+    // --background-color: #f0f5f9;
+  
+    --surface: #f2f6fa;
+    --surface-dark: #d3d8db;
+  
+    --on-primary: #ffffff;
+    --on-primary-light: var(--primary);
+    --on-primary-dark: #ffffff;
+    --on-surface: #f2f6fa;
+    --on-surface-dark: #d3d8db;
+  
+    --sidebar-background-color: var(--surface-dark);
+    --sidebar-inactive-element: var(--on-surface-dark);
+    --sidebar-active-element: #ffffff;
+  
+    --main-color: var(--primary);
+    --main-text-color: var(--on-surface);
+  
+    --button-primary-background-color: var(--on-primary);
+    --button-secondary-background-color: var(--primary-light);
+    --button-primary-text-color: var(--on-primary);
+    --button-secondary-text-color: var(--on-primary-light);
+  
+    --content-background-color: var(--surface);
+    --card-background-color: var(--surface);
+  
+    --form-border-color: #d5d7d9;
+    --form-placeholder-color: #eee;
+    --form-background-color: var(--surface);
+    --form-text-color: var(--on-surface);
+  
+    --table-header-background-color: rgb(245, 245, 245);
+    --table-header-text-color: rgba(0, 0, 0, 0.54);
+    --table-body-background-color: var(--surface);
+    --table-body-text-color: var(--on-surface);
+  
+    --chart-primary-color: var(--primary);
+    --chart-secondary-colors: #ff9b21;
+  
+    // Fonts
+    /* ------------ Sidebar Fonts -------------*/
+    --sidebar-font-family: "Hind Siliguri", sans-serif;
+    --sidebar-font-size: 14px;
+    --sidebar-font-weight: 500;
+  
+    /* ------------ Content Fonts -------------*/
+    // --content-font-family: "Hind Siliguri", sans-serif;
+    --content-font-family: "'Roboto'";
+    --content-font-size: 14px;
+    --content-font-weight: 500;
+  
+    /* ------------ Input Fonts -------------*/
+    --input-font-family: "Hind Siliguri", sans-serif;
+    --input-font-size: 14px;
+    --input-font-weight: 500;
+  
+    /* ------------ Table Fonts -------------*/
+    --table-font-family: "Hind Siliguri", sans-serif;
+    --table-font-size: 14px;
+    --table-font-weight: 500;
+  
+    color: var(--main-text-color);
+  }
+  
