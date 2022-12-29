@@ -1,4 +1,3 @@
-
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @use '@angular/material' as mat;
@@ -13,20 +12,27 @@
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
 $promotions_app_front-primary: mat.define-palette(mat.$indigo-palette);
-$promotions_app_front-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$promotions_app_front-accent: mat.define-palette(
+  mat.$pink-palette,
+  A200,
+  A100,
+  A400
+);
 
 // The warn palette is optional (defaults to red).
 $promotions_app_front-warn: mat.define-palette(mat.$red-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$promotions_app_front-theme: mat.define-light-theme((
-  color: (
-    primary: $promotions_app_front-primary,
-    accent: $promotions_app_front-accent,
-    warn: $promotions_app_front-warn,
+$promotions_app_front-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $promotions_app_front-primary,
+      accent: $promotions_app_front-accent,
+      warn: $promotions_app_front-warn,
+    ),
   )
-));
+);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
@@ -40,75 +46,84 @@ $promotions_app_front-theme: mat.define-light-theme((
 @tailwind utilities;
 
 body {
-    --primary: #0094ff;
-    --primary-dark: #0082e0;
-    --primary-light: #1a9fff;
-  
-    // --background-color: #f0f5f9;
-  
-    --surface: #f2f6fa;
-    --surface-dark: #d3d8db;
-  
-    --on-primary: #ffffff;
-    --on-primary-light: var(--primary);
-    --on-primary-dark: #ffffff;
-    --on-surface: #f2f6fa;
-    --on-surface-dark: #d3d8db;
-  
-    --sidebar-background-color: var(--surface-dark);
-    --sidebar-inactive-element: var(--on-surface-dark);
-    --sidebar-active-element: #ffffff;
-  
-    --main-color: var(--primary);
-    --main-text-color: var(--on-surface);
-  
-    --button-primary-background-color: var(--on-primary);
-    --button-secondary-background-color: var(--primary-light);
-    --button-primary-text-color: var(--on-primary);
-    --button-secondary-text-color: var(--on-primary-light);
-  
-    --content-background-color: var(--surface);
-    --card-background-color: var(--surface);
-  
-    --form-border-color: #d5d7d9;
-    --form-placeholder-color: #eee;
-    --form-background-color: var(--surface);
-    --form-text-color: var(--on-surface);
-  
-    --table-header-background-color: rgb(245, 245, 245);
-    --table-header-text-color: rgba(0, 0, 0, 0.54);
-    --table-body-background-color: var(--surface);
-    --table-body-text-color: var(--on-surface);
-  
-    --chart-primary-color: var(--primary);
-    --chart-secondary-colors: #ff9b21;
-  
-    // Fonts
-    /* ------------ Sidebar Fonts -------------*/
-    --sidebar-font-family: "Hind Siliguri", sans-serif;
-    --sidebar-font-size: 14px;
-    --sidebar-font-weight: 500;
-  
-    /* ------------ Content Fonts -------------*/
-    // --content-font-family: "Hind Siliguri", sans-serif;
-    --content-font-family: "'Roboto'";
-    --content-font-size: 14px;
-    --content-font-weight: 500;
-  
-    /* ------------ Input Fonts -------------*/
-    --input-font-family: "Hind Siliguri", sans-serif;
-    --input-font-size: 14px;
-    --input-font-weight: 500;
-  
-    /* ------------ Table Fonts -------------*/
-    --table-font-family: "Hind Siliguri", sans-serif;
-    --table-font-size: 14px;
-    --table-font-weight: 500;
-  
-    color: var(--main-text-color);
-  }
-  
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+  --primary: #0094ff;
+  --primary-dark: #0082e0;
+  --primary-light: #1a9fff;
 
+  --success: #2dd36f;
+  --warning: #ffc409;
+  --danger: #eb445a;
+  --info: #92949c;
 
+  // --background-color: #f0f5f9;
+
+  --surface: #f2f6fa;
+  --surface-dark: #d3d8db;
+
+  --on-primary: #ffffff;
+  --on-primary-light: var(--primary);
+  --on-primary-dark: #ffffff;
+  --on-surface: #f2f6fa;
+  --on-surface-dark: #d3d8db;
+
+  --sidebar-background-color: var(--surface-dark);
+  --sidebar-inactive-element: var(--on-surface-dark);
+  --sidebar-active-element: #ffffff;
+
+  --main-color: var(--primary);
+  --main-text-color: var(--on-surface);
+
+  --button-primary-background-color: var(--on-primary);
+  --button-secondary-background-color: var(--primary-light);
+  --button-primary-text-color: var(--on-primary);
+  --button-secondary-text-color: var(--on-primary-light);
+
+  --content-background-color: var(--surface);
+  --card-background-color: var(--surface);
+
+  --form-border-color: #d5d7d9;
+  --form-placeholder-color: #eee;
+  --form-background-color: var(--surface);
+  --form-text-color: var(--on-surface);
+
+  --table-header-background-color: rgb(245, 245, 245);
+  --table-header-text-color: rgba(0, 0, 0, 0.54);
+  --table-body-background-color: var(--surface);
+  --table-body-text-color: var(--on-surface);
+
+  --chart-primary-color: var(--primary);
+  --chart-secondary-colors: #ff9b21;
+
+  // Fonts
+  /* ------------ Sidebar Fonts -------------*/
+  --sidebar-font-family: "Hind Siliguri", sans-serif;
+  --sidebar-font-size: 14px;
+  --sidebar-font-weight: 500;
+
+  /* ------------ Content Fonts -------------*/
+  // --content-font-family: "Hind Siliguri", sans-serif;
+  --content-font-family: "'Roboto'";
+  --content-font-size: 14px;
+  --content-font-weight: 500;
+
+  /* ------------ Input Fonts -------------*/
+  --input-font-family: "Hind Siliguri", sans-serif;
+  --input-font-size: 14px;
+  --input-font-weight: 500;
+
+  /* ------------ Table Fonts -------------*/
+  --table-font-family: "Hind Siliguri", sans-serif;
+  --table-font-size: 14px;
+  --table-font-weight: 500;
+
+  color: var(--main-text-color);
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
