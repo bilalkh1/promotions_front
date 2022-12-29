@@ -15,6 +15,7 @@ import { Component, Input, OnInit } from '@angular/core';
               class="pl-3 font-medium"
               [ngClass]="classes"
               *ngIf="withLabel"
+              [ngStyle]="{ 'color': labelColor }"
             >
               {{label}}
             </label>
@@ -30,7 +31,9 @@ import { Component, Input, OnInit } from '@angular/core';
           for="toggle" 
           class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
       </div>
-      <label for="toggle"  [ngClass]="classes">{{label}}</label>
+      <label for="toggle"  
+            [ngClass]="classes"
+            [ngStyle]="{ 'color': labelColor }">{{label}}</label>
     </div>
           `,
   styleUrls: ['./checkbox.component.scss']
@@ -46,7 +49,7 @@ export class CheckboxComponent {
 
   public get classes(): string[]{
     const size = this.size ? `text-${this.size}` : '';
-    const labelColor = this.labelColor ? `text-[${this.labelColor}]` : '';
-    return [size, labelColor];
+    // const labelColor = this.labelColor ? `text-[${this.labelColor}]` : '';
+    return [size];
   }
 }

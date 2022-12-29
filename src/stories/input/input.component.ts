@@ -29,8 +29,8 @@ import { Component, OnInit, Input } from '@angular/core';
               w-full
               text-{{size}}
               outline-none 
-              focus:border-[{{focusBorderColor}}] 
-              focus:shadow-{{shadow}}}"
+              focus:border-[#0094ff] 
+              focus:shadow-md"
             />
           </div>
   `,

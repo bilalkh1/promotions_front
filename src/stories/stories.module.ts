@@ -7,6 +7,10 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import { SelectComponent } from './select/select.component';
 
 
+import BadgeComponent from './badge/badge.component';
+import TabsComponent from './tabs/tabs.component';
+import NotificationComponent from './notification/notification.component';
+import StepperComponent from './stepper/stepper.component';
 
 @NgModule({
   declarations: [
@@ -14,13 +18,17 @@ import { SelectComponent } from './select/select.component';
     AvatarComponent,
     InputComponent,
     CheckboxComponent,
-    SelectComponent
+    SelectComponent,
+    BadgeComponent,
+    TabsComponent,
+    NotificationComponent,
+    StepperComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    ButtonComponent
+    // ButtonComponent
   ]
 })
 export class StoriesModule { }

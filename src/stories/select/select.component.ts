@@ -7,6 +7,11 @@ import { Component, Input, OnInit } from '@angular/core';
       <label for="countries" 
       class="block mb-2 font-medium text-gray-900 dark:text-gray-400"
       [ngClass]="classes"
+      [ngStyle]="
+        {
+          'color': labelColor
+        }
+      "
       >{{label}}</label>
         <select id="countries" 
         class="
@@ -40,8 +45,8 @@ export class SelectComponent {
 
   public get classes(): string[]{
     const size = this.size ? `text-${this.size}` : '';
-    const labelColor = this.labelColor ? `text-[${this.labelColor}]` : '';
+    // const labelColor = this.labelColor ? `text-[${this.labelColor}]` : '';
     const rounded = this.rounded ? `rounded-${this.rounded}` : '';
-    return [size, labelColor, rounded];
+    return [size, rounded];
   }
 }

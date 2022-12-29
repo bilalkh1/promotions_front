@@ -1,0 +1,19 @@
+.badge {
+    background-color: #eaecee;
+    color: #1C1C1C;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: 450;
+}
+
+
+.badge--small {
+    font-size: 12px;
+}
+.badge--medium {
+    font-size: 14px;
+}
+.badge--large {
+    font-size: 16px;
+    padding: 6px 13px;
+}

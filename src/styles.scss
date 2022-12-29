@@ -34,10 +34,16 @@ $promotions_app_front-theme: mat.define-light-theme((
 @include mat.all-component-themes($promotions_app_front-theme);
 
 /* You can add global styles to this file, and also import other style files */
-
+// Tailwind
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+// Bootstrap Icons
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+
 
 body {
     --primary: #0094ff;
