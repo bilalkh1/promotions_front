@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import ButtonComponent from './button.component';
-import { AvatarComponent } from './avatar/avatar.component';
 import { InputComponent } from './input/input.component';
+import AvatarComponent from './avatar/avatar.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
+import { SelectComponent } from './select/select.component';
 
 
 
@@ -10,7 +12,9 @@ import { InputComponent } from './input/input.component';
   declarations: [
     ButtonComponent,
     AvatarComponent,
-    InputComponent
+    InputComponent,
+    CheckboxComponent,
+    SelectComponent
   ],
   imports: [
     CommonModule
