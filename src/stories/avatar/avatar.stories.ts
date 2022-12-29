@@ -6,10 +6,6 @@ import AvatarComponent from './avatar.component';
 export default {
   title: 'Example/Avatar',
   component: AvatarComponent,
-  // More on argTypes: https://storybook.js.org/docs/angular/api/argtypes
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
 } as Meta;
 
 // More on component templates: https://storybook.js.org/docs/angular/writing-stories/introduction#using-args
@@ -17,31 +13,33 @@ const Template: Story<AvatarComponent> = (args: AvatarComponent) => ({
   props: args,
 });
 
-export const WithName = Template.bind({});
+export const Normal = Template.bind({});
 // More on args: https://storybook.js.org/docs/angular/writing-stories/args
-WithName.args = {
-  withName: true,
-  name: "Hello1",
+Normal.args = {
+  withName: false,
   withIcon: false
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
+export const AvatarWithName = Template.bind({});
+AvatarWithName.args = {
     withName: true,
-    name: "Hello2",
+    name: "Bilal EL Khatab",
     withIcon: false
 };
 
-export const Large = Template.bind({});
-Large.args = {
+export const AvatarIconName = Template.bind({});
+AvatarIconName.args = {
     withName: true,
-    name: "Hello3",
-    withIcon: false
+    name: "Bilal EL Khatab",
+    withIcon: true
 };
 
-export const Small = Template.bind({});
-Small.args = {
+export const FullAvatar = Template.bind({});
+FullAvatar.args = {
     withName: true,
-    name: "Hello4",
-    withIcon: false
+    name: "Bilal EL Khatab",
+    withIcon: true,
+    withText: true,
+    text: 'bilal.khatab@outlook.fr'
+
 };
