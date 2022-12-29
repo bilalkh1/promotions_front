@@ -1,0 +1,63 @@
+.notification {
+    background-color: #333333;
+    color: #fff;
+    border-radius: 8px;
+    width: fit-content;
+    padding: 0.75rem 1rem;
+    padding-right: 1.2rem;
+    i {
+        font-size: 25px;
+    }
+
+    span {
+    }
+}
+
+.icon--success {
+    color: #a1e3cb;
+}
+
+.icon--warning {
+    color: #fdda54;
+}
+
+.icon--error {
+    color: #ff4747;
+}
+
+
+.notification--small {
+    padding: 0.55rem 0.75rem;
+    padding-right: 1.2rem;
+    i {
+        font-size: 16px;
+    }
+
+    span {
+        font-size: 15px;
+    }
+}
+
+.notification--medium {
+    padding: 0.75rem 1rem;
+    padding-right: 1.2rem;
+    i {
+        font-size: 25px;
+    }
+
+    span {
+        font-size: 18px;
+    }
+}
+
+.notification--large {
+    padding: 0.8rem 1.2rem;
+    padding-right: 1.2rem;
+    i {
+        font-size: 30px;
+    }
+
+    span {
+        font-size: 22px;
+    }
+}

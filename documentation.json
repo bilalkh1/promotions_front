@@ -73,7 +73,7 @@
         },
         {
             "name": "AvatarComponent",
-            "id": "component-AvatarComponent-ceceab6fe154098e0d2a8aa12fd7742fb33c18b614547a6ca9cba1a9a6cde6d4b1513a3d4e2917727cfe54c82003186553130e7a9becf703b816e18049f830e2",
+            "id": "component-AvatarComponent-7a4fe791a659bc803b354e4c3da33c3cee72e92ff0867fcaaac6250d6e6d6be8d9c270c250362ddaf78c92c25caba6be651a31c207fc897a543948f2eaa722eb",
             "file": "src/stories/avatar/avatar.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -85,7 +85,7 @@
                 "./avatar.component.scss"
             ],
             "styles": [],
-            "template": "<div class=\"flex -space-x-1 overflow-hidden mt-10\" [ngClass]=\"classes\">\n  <img class=\"inline-block h-6 w-6 rounded-full ring-2 ring-white\" src=\"https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80\" alt=\"\">\n  <span *ngIf=\"withName\">{{ name }}</span>\n</div>\n",
+            "template": "<div class=\"flex -space-x-1 overflow-hidden items-center justify-start cursor-pointer\">\n  <img class=\"inline-block h-10 w-10 ring-2 ring-white mr-4\" [ngClass]=\"classes\" src=\"https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80\" alt=\"\">\n  <div>\n    <h6 *ngIf=\"withName\">{{ name }}</h6>\n    <p *ngIf=\"withText\">{{text}}</p>\n  </div>\n  <i class=\"bi bi-chevron-down\" *ngIf=\"withIcon\"></i>\n</div>\n",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [
@@ -94,7 +94,7 @@
                     "defaultValue": "true",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 15,
+                    "line": 19,
                     "type": "boolean",
                     "decorators": []
                 },
@@ -103,7 +103,7 @@
                     "defaultValue": "'nothing'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 16,
+                    "line": 20,
                     "type": "string",
                     "decorators": []
                 },
@@ -112,7 +112,7 @@
                     "defaultValue": "'medium'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 20,
+                    "line": 24,
                     "type": "\"small\" | \"medium\" | \"large\"",
                     "decorators": []
                 },
@@ -121,7 +121,7 @@
                     "defaultValue": "'nothing'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 19,
+                    "line": 23,
                     "type": "string",
                     "decorators": []
                 },
@@ -130,7 +130,7 @@
                     "defaultValue": "true",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 17,
+                    "line": 21,
                     "type": "boolean",
                     "decorators": []
                 },
@@ -139,7 +139,7 @@
                     "defaultValue": "false",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 14,
+                    "line": 18,
                     "type": "boolean",
                     "decorators": []
                 },
@@ -148,7 +148,7 @@
                     "defaultValue": "false",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 18,
+                    "line": 22,
                     "type": "boolean",
                     "decorators": []
                 }
@@ -163,11 +163,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-avatar',\n  template: `\n    <div class=\"flex -space-x-1 overflow-hidden mt-10\" [ngClass]=\"classes\">\n      <img class=\"inline-block h-6 w-6 rounded-full ring-2 ring-white\" src=\"https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80\" alt=\"\">\n      <span *ngIf=\"withName\">{{ name }}</span>\n    </div>\n  `,\n  styleUrls: ['./avatar.component.scss']\n})\nexport default class AvatarComponent {\n  @Input() withName = false;\n  @Input() circled = true;\n  @Input() name = 'nothing';\n  @Input() withIcon = true;\n  @Input() withText = false;\n  @Input() text = 'nothing';\n  @Input() size: 'small' | 'medium' | 'large' = 'medium';\n\n  public get classes(): string[] {\n\n    return [];\n  }\n\n}\n",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-avatar',\n  template: `\n    <div class=\"flex -space-x-1 overflow-hidden items-center justify-start cursor-pointer\">\n      <img class=\"inline-block h-10 w-10 ring-2 ring-white mr-4\" [ngClass]=\"classes\" src=\"https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80\" alt=\"\">\n      <div>\n        <h6 *ngIf=\"withName\">{{ name }}</h6>\n        <p *ngIf=\"withText\">{{text}}</p>\n      </div>\n      <i class=\"bi bi-chevron-down\" *ngIf=\"withIcon\"></i>\n    </div>\n  `,\n  styleUrls: ['./avatar.component.scss']\n})\nexport default class AvatarComponent {\n  @Input() withName = false;\n  @Input() circled = true;\n  @Input() name = 'nothing';\n  @Input() withIcon = true;\n  @Input() withText = false;\n  @Input() text = 'nothing';\n  @Input() size: 'small' | 'medium' | 'large' = 'medium';\n\n  public get classes(): string[] {\n    const circled = this.circled ? 'rounded-full': 'rounded';\n    return [circled];\n  }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "span {\r\n    color: red;\r\n}",
+                    "data": "p {\r\n    color: rgba(0, 0, 0, 0.4);\r\n}\r\n\r\nh6 {\r\n    color: #1C1C1C;\r\n    font-weight: 500;\r\n}\r\n\r\ni {\r\n    color: rgba(0, 0, 0, 0.4);\r\n    margin-left: 1.75rem!important;\r\n}",
                     "styleUrl": "./avatar.component.scss"
                 }
             ],
@@ -179,7 +179,91 @@
                         "name": "classes",
                         "type": "[]",
                         "returnType": "string[]",
-                        "line": 22
+                        "line": 26
+                    }
+                }
+            }
+        },
+        {
+            "name": "BadgeComponent",
+            "id": "component-BadgeComponent-dc0072ff62436917eec43cf4b7121a6462d42898e3a42b081a86533518beafff81200cac4b3197fed6dc41d3d5a1927374da3cb41fd15f2f14c6ab4819222e1a",
+            "file": "src/stories/badge/badge.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-badge",
+            "styleUrls": [
+                "./badge.component.scss"
+            ],
+            "styles": [],
+            "template": "<span               class=\"badge\"\n              [ngStyle]=\"{ 'background-color': backgroundColor }\"\n        >{{ label }}</span>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "backgroundColor",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "'Text'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'medium'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "\"small\" | \"medium\" | \"large\"",
+                    "decorators": []
+                },
+                {
+                    "name": "textColor",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-badge',\n  template: `<span \n              class=\"badge\" \n              [ngStyle]=\"{ 'background-color': backgroundColor }\"\n        >{{ label }}</span>`,\n  styleUrls: ['./badge.component.scss']\n})\nexport default class BadgeComponent {\n  @Input() backgroundColor?: string;\n  @Input() size: 'small' | 'medium' | 'large' = 'medium';\n  @Input() label = 'Text';\n  @Input() textColor?: string;\n  \n\n  public get classes(): string[] {\n\n    return ['badge'];\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".badge {\r\n    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\r\n    background-color: rgba($color: #000000, $alpha: 0.5);\r\n    padding: 10px;\r\n}\r\n\r\n\r\n.storybook-button--small {\r\n    font-size: 12px;\r\n    padding: 10px 16px;\r\n}\r\n  .storybook-button--medium {\r\n    font-size: 14px;\r\n    padding: 11px 20px;\r\n}\r\n.storybook-button--large {\r\n    font-size: 16px;\r\n    padding: 12px 24px;\r\n}",
+                    "styleUrl": "./badge.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "accessors": {
+                "classes": {
+                    "name": "classes",
+                    "getSignature": {
+                        "name": "classes",
+                        "type": "[]",
+                        "returnType": "string[]",
+                        "line": 18
                     }
                 }
             }
@@ -552,13 +636,13 @@
         },
         {
             "name": "StoriesModule",
-            "id": "module-StoriesModule-faa7da4c52c7a3decc240f71573f3921cdb6a4b178d039cfff5408affe7569890ff0eeaca97b59a78c4ed8be1f7b01568a37ac1230872133dcdd85438a33df5b",
+            "id": "module-StoriesModule-b4a86101c42e74b87add34234f81b0c6a81dd7f81c970dae185c6b41d38c41945f66539a1a6306f2d01ea92efd44c45f41ca150aa1f5be83801ad1e710678cd0",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/stories/stories.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport ButtonComponent from './button.component';\nimport AvatarComponent from './avatar/avatar.component';\n\n\n\n@NgModule({\n  declarations: [\n    ButtonComponent,\n    AvatarComponent\n  ],\n  imports: [\n    CommonModule\n  ],\n  exports: [\n    ButtonComponent\n  ]\n})\nexport class StoriesModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport ButtonComponent from './button.component';\nimport AvatarComponent from './avatar/avatar.component';\nimport BadgeComponent from './badge/badge.component';\n\n\n\n@NgModule({\n  declarations: [\n    ButtonComponent,\n    AvatarComponent,\n    BadgeComponent\n  ],\n  imports: [\n    CommonModule\n  ],\n  exports: [\n    ButtonComponent\n  ]\n})\nexport class StoriesModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -569,6 +653,9 @@
                     "elements": [
                         {
                             "name": "AvatarComponent"
+                        },
+                        {
+                            "name": "BadgeComponent"
                         },
                         {
                             "name": "ButtonComponent"
@@ -601,6 +688,26 @@
     "miscellaneous": {
         "variables": [
             {
+                "name": "AvatarIconName",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/avatar/avatar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "AvatarWithName",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/avatar/avatar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "context",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -631,6 +738,16 @@
                 "defaultValue": "{\n  production: false\n}"
             },
             {
+                "name": "FullAvatar",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/avatar/avatar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "Large",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -644,6 +761,66 @@
                 "name": "Large",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/badge/Badge.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedIn",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedIn",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Medium",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/badge/Badge.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Normal",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/avatar/avatar.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -651,40 +828,10 @@
                 "defaultValue": "Template.bind({})"
             },
             {
-                "name": "LoggedIn",
+                "name": "Normal",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Header.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "LoggedIn",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Page.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "LoggedOut",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Header.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "LoggedOut",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Page.stories.ts",
+                "file": "src/stories/badge/Badge.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -720,16 +867,6 @@
                 "defaultValue": "Template.bind({})"
             },
             {
-                "name": "Secondary",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/avatar/avatar.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
                 "name": "Small",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -743,7 +880,7 @@
                 "name": "Small",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/avatar/avatar.stories.ts",
+                "file": "src/stories/badge/Badge.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -790,20 +927,72 @@
                 "defaultValue": "(args: AvatarComponent) => ({\r\n  props: args,\r\n})"
             },
             {
-                "name": "WithName",
+                "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/avatar/avatar.stories.ts",
+                "file": "src/stories/badge/Badge.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
+                "type": "Story<BadgeComponent>",
+                "defaultValue": "(args: BadgeComponent) => ({\r\n  props: args,\r\n})"
             }
         ],
         "functions": [],
         "typealiases": [],
         "enumerations": [],
         "groupedVariables": {
+            "src/stories/avatar/avatar.stories.ts": [
+                {
+                    "name": "AvatarIconName",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/avatar/avatar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "AvatarWithName",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/avatar/avatar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "FullAvatar",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/avatar/avatar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Normal",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/avatar/avatar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/avatar/avatar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<AvatarComponent>",
+                    "defaultValue": "(args: AvatarComponent) => ({\r\n  props: args,\r\n})"
+                }
+            ],
             "src/test.ts": [
                 {
                     "name": "context",
@@ -901,22 +1090,32 @@
                     "defaultValue": "(args: Button) => ({\n  props: args,\n})"
                 }
             ],
-            "src/stories/avatar/avatar.stories.ts": [
+            "src/stories/badge/Badge.stories.ts": [
                 {
                     "name": "Large",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/avatar/avatar.stories.ts",
+                    "file": "src/stories/badge/Badge.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
                 },
                 {
-                    "name": "Secondary",
+                    "name": "Medium",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/avatar/avatar.stories.ts",
+                    "file": "src/stories/badge/Badge.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Normal",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/badge/Badge.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -926,7 +1125,7 @@
                     "name": "Small",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/avatar/avatar.stories.ts",
+                    "file": "src/stories/badge/Badge.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -936,21 +1135,11 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/avatar/avatar.stories.ts",
+                    "file": "src/stories/badge/Badge.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Story<AvatarComponent>",
-                    "defaultValue": "(args: AvatarComponent) => ({\r\n  props: args,\r\n})"
-                },
-                {
-                    "name": "WithName",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/avatar/avatar.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
+                    "type": "Story<BadgeComponent>",
+                    "defaultValue": "(args: BadgeComponent) => ({\r\n  props: args,\r\n})"
                 }
             ],
             "src/stories/Header.stories.ts": [
@@ -1037,7 +1226,7 @@
         ]
     },
     "coverage": {
-        "count": 3,
+        "count": 2,
         "status": "low",
         "files": [
             {
@@ -1202,7 +1391,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Large",
+                "name": "AvatarIconName",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -1212,7 +1401,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Secondary",
+                "name": "AvatarWithName",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -1222,7 +1411,17 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Small",
+                "name": "FullAvatar",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/avatar/avatar.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Normal",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -1238,13 +1437,62 @@
                 "status": "low"
             },
             {
-                "filePath": "src/stories/avatar/avatar.stories.ts",
+                "filePath": "src/stories/badge/Badge.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "WithName",
+                "name": "Large",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/badge/Badge.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Medium",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/badge/Badge.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Normal",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/badge/Badge.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Small",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/badge/Badge.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/badge/badge.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "BadgeComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
                 "status": "low"
             },
             {
