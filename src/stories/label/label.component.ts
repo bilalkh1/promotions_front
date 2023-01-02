@@ -20,7 +20,7 @@ import { Component, Input } from '@angular/core';
       <span>{{ text }}</span>
     </div>
   `,
-  styleUrls: ['./label.component.scss'],
+  styleUrls: [],
 })
 export class LabelComponent {
   /**

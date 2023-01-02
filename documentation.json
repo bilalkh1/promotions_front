@@ -73,15 +73,7 @@
         },
         {
             "name": "AvatarComponent",
-<<<<<<< HEAD
-<<<<<<< HEAD
-            "id": "component-AvatarComponent-626cf0bc409bf00b135e2afcee2c97a9315a5e0669c1618dd840a2ac8c571ed1129d1313b79178849d24c721370dc161595388c3cb7ee5350719a367d6fb4d95",
-=======
-            "id": "component-AvatarComponent-7a4fe791a659bc803b354e4c3da33c3cee72e92ff0867fcaaac6250d6e6d6be8d9c270c250362ddaf78c92c25caba6be651a31c207fc897a543948f2eaa722eb",
->>>>>>> 9235b21f578bd0fae47ba4f91c2b0452e21efc82
-=======
             "id": "component-AvatarComponent-9ae3426078a453a93c8a44f747e55e9dffb74855f06dd195a1863cd709b1bb0717e6ce9446b8f8e0fa26dcd539368623f7721cb44b1716e55135b0cc12255f48",
->>>>>>> 55608a64475db2400640fc7a8a0f2f4459880821
             "file": "src/stories/avatar/avatar.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -93,11 +85,7 @@
                 "./avatar.component.scss"
             ],
             "styles": [],
-<<<<<<< HEAD
-            "template": "<div class=\"flex -space-x-1 overflow-hidden\">\n  <img class=\"inline-block h-10 w-10 ring-2 ring-white\" [ngClass]=\"classes\" src=\"https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80\" alt=\"\">\n  <span *ngIf=\"withName\">{{ name }}</span>\n</div>\n",
-=======
             "template": "<div class=\"flex -space-x-1 overflow-hidden items-center justify-start cursor-pointer\">\n  <img class=\"inline-block h-10 w-10 ring-2 ring-white mr-4\" [ngClass]=\"classes\" src=\"https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80\" alt=\"\">\n  <div>\n    <h6 *ngIf=\"withName\">{{ name }}</h6>\n    <p *ngIf=\"withText\">{{text}}</p>\n  </div>\n  <i class=\"bi bi-chevron-down\" *ngIf=\"withIcon\"></i>\n</div>\n",
->>>>>>> 9235b21f578bd0fae47ba4f91c2b0452e21efc82
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [
@@ -175,15 +163,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-<<<<<<< HEAD
-<<<<<<< HEAD
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-avatar',\r\n  template: `\r\n    <div class=\"flex -space-x-1 overflow-hidden\">\r\n      <img class=\"inline-block h-10 w-10 ring-2 ring-white\" [ngClass]=\"classes\" src=\"https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80\" alt=\"\">\r\n      <span *ngIf=\"withName\">{{ name }}</span>\r\n    </div>\r\n  `,\r\n  styleUrls: ['./avatar.component.scss']\r\n})\r\nexport default class AvatarComponent {\r\n  @Input() withName = false;\r\n  @Input() circled = true;\r\n  @Input() name = 'nothing';\r\n  @Input() withIcon = true;\r\n  @Input() withText = false;\r\n  @Input() text = 'nothing';\r\n  @Input() size: 'small' | 'medium' | 'large' = 'medium';\r\n\r\n  public get classes(): string[] {\r\n    const circled = this.circled ? 'rounded-full': 'rounded';\r\n    return [circled];\r\n  }\r\n\r\n}\r\n",
-=======
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-avatar',\n  template: `\n    <div class=\"flex -space-x-1 overflow-hidden items-center justify-start cursor-pointer\">\n      <img class=\"inline-block h-10 w-10 ring-2 ring-white mr-4\" [ngClass]=\"classes\" src=\"https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80\" alt=\"\">\n      <div>\n        <h6 *ngIf=\"withName\">{{ name }}</h6>\n        <p *ngIf=\"withText\">{{text}}</p>\n      </div>\n      <i class=\"bi bi-chevron-down\" *ngIf=\"withIcon\"></i>\n    </div>\n  `,\n  styleUrls: ['./avatar.component.scss']\n})\nexport default class AvatarComponent {\n  @Input() withName = false;\n  @Input() circled = true;\n  @Input() name = 'nothing';\n  @Input() withIcon = true;\n  @Input() withText = false;\n  @Input() text = 'nothing';\n  @Input() size: 'small' | 'medium' | 'large' = 'medium';\n\n  public get classes(): string[] {\n    const circled = this.circled ? 'rounded-full': 'rounded';\n    return [circled];\n  }\n\n}\n",
->>>>>>> 9235b21f578bd0fae47ba4f91c2b0452e21efc82
-=======
             "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-avatar',\r\n  template: `\r\n    <div class=\"flex -space-x-1 overflow-hidden items-center justify-start cursor-pointer\">\r\n      <img class=\"inline-block h-10 w-10 ring-2 ring-white mr-4\" [ngClass]=\"classes\" src=\"https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80\" alt=\"\">\r\n      <div>\r\n        <h6 *ngIf=\"withName\">{{ name }}</h6>\r\n        <p *ngIf=\"withText\">{{text}}</p>\r\n      </div>\r\n      <i class=\"bi bi-chevron-down\" *ngIf=\"withIcon\"></i>\r\n    </div>\r\n  `,\r\n  styleUrls: ['./avatar.component.scss']\r\n})\r\nexport default class AvatarComponent {\r\n  @Input() withName = false;\r\n  @Input() circled = true;\r\n  @Input() name = 'nothing';\r\n  @Input() withIcon = true;\r\n  @Input() withText = false;\r\n  @Input() text = 'nothing';\r\n  @Input() size: 'small' | 'medium' | 'large' = 'medium';\r\n\r\n  public get classes(): string[] {\r\n    const circled = this.circled ? 'rounded-full': 'rounded';\r\n    return [circled];\r\n  }\r\n\r\n}\r\n",
->>>>>>> 55608a64475db2400640fc7a8a0f2f4459880821
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -414,7 +394,7 @@
         },
         {
             "name": "CheckboxComponent",
-            "id": "component-CheckboxComponent-609a3f8765746d170997a56caa50081fed8f9409ca3e0c226b05526845e05682b43d77d6389541453524ef135fd384f6bc9cd8bdbc33cffcad59306580545fea",
+            "id": "component-CheckboxComponent-5ba5e85030a9762f2874a0d358b8141fd11fdcfdd9e2c724191e4627ae21dafa129a4028ba2c90f048aa926681b8ba53fe45315de214aef17ff459ef983e8cef",
             "file": "src/stories/checkbox/checkbox.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -426,7 +406,7 @@
                 "./checkbox.component.scss"
             ],
             "styles": [],
-            "template": "<div class=\"flex items-center\" *ngIf=\"type != 'toggle'\">\n          <input\n            type=\"{{type}}\"\n            name=\"{{name}}\"\n            id=\"radioButton1\"\n            class=\"h-5 w-5\"\n          />\n          <label\n            for=\"radioButton1\"\n            class=\"pl-3 font-medium\"\n            [ngClass]=\"classes\"\n            *ngIf=\"withLabel\"\n          >\n            {{label}}\n          </label>\n</div>\n<div class=\"\" *ngIf=\"type === 'toggle'\">\n  <div class=\"relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in\">\n      <input\n        type=\"checkbox\"\n        name=\"{{name}}\"\n        id=\"toggle\"\n        class=\"toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer\"/>\n      <label\n        for=\"toggle\"\n        class=\"toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer\"></label>\n    </div>\n    <label for=\"toggle\"  [ngClass]=\"classes\">{{label}}</label>\n  </div>\n",
+            "template": "<div class=\"flex items-center\" *ngIf=\"type != 'toggle'\">\n          <input\n            type=\"{{type}}\"\n            name=\"{{name}}\"\n            id=\"radioButton1\"\n            class=\"h-5 w-5\"\n          />\n          <label\n            for=\"radioButton1\"\n            class=\"pl-3 font-medium\"\n            [ngClass]=\"classes\"\n            *ngIf=\"withLabel\"\n            [ngStyle]=\"{ 'color': labelColor }\"\n          >\n            {{label}}\n          </label>\n</div>\n<div class=\"\" *ngIf=\"type === 'toggle'\">\n  <div class=\"relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in\">\n      <input\n        type=\"checkbox\"\n        name=\"{{name}}\"\n        id=\"toggle\"\n        class=\"toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer\"/>\n      <label\n        for=\"toggle\"\n        class=\"toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer\"></label>\n    </div>\n    <label for=\"toggle\"\n          [ngClass]=\"classes\"\n          [ngStyle]=\"{ 'color': labelColor }\">{{label}}</label>\n  </div>\n",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [
@@ -435,7 +415,7 @@
                     "defaultValue": "'nothing'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 40,
+                    "line": 43,
                     "type": "string",
                     "decorators": []
                 },
@@ -444,7 +424,7 @@
                     "defaultValue": "'#07074D'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 44,
+                    "line": 47,
                     "type": "string",
                     "decorators": []
                 },
@@ -453,7 +433,7 @@
                     "defaultValue": "''",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 39,
+                    "line": 42,
                     "type": "string",
                     "decorators": []
                 },
@@ -462,7 +442,7 @@
                     "defaultValue": "'base'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 43,
+                    "line": 46,
                     "type": "\"xs\" | \"sm\" | \"base\" | \"lg\" | \"xl\"",
                     "decorators": []
                 },
@@ -471,7 +451,7 @@
                     "defaultValue": "'checkbox'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 42,
+                    "line": 45,
                     "type": "\"checkbox\" | \"radio\" | \"toggle\"",
                     "decorators": []
                 },
@@ -480,7 +460,7 @@
                     "defaultValue": "false",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 41,
+                    "line": 44,
                     "type": "boolean",
                     "decorators": []
                 }
@@ -495,7 +475,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-checkbox',\n  template: `\n  <div class=\"flex items-center\" *ngIf=\"type != 'toggle'\">\n            <input\n              type=\"{{type}}\"\n              name=\"{{name}}\"\n              id=\"radioButton1\"\n              class=\"h-5 w-5\"\n            />\n            <label\n              for=\"radioButton1\"\n              class=\"pl-3 font-medium\"\n              [ngClass]=\"classes\"\n              *ngIf=\"withLabel\"\n            >\n              {{label}}\n            </label>\n  </div>\n  <div class=\"\" *ngIf=\"type === 'toggle'\">\n    <div class=\"relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in\">\n        <input \n          type=\"checkbox\" \n          name=\"{{name}}\" \n          id=\"toggle\" \n          class=\"toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer\"/>\n        <label \n          for=\"toggle\" \n          class=\"toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer\"></label>\n      </div>\n      <label for=\"toggle\"  [ngClass]=\"classes\">{{label}}</label>\n    </div>\n          `,\n  styleUrls: ['./checkbox.component.scss']\n})\nexport class CheckboxComponent {\n  @Input() name: string = '';\n  @Input() label = 'nothing';\n  @Input() withLabel = false;\n  @Input() type: 'checkbox' | 'radio' | 'toggle' = 'checkbox';\n  @Input() size: 'xs' | 'sm' | 'base' | 'lg' | 'xl' = 'base';\n  @Input() labelColor = '#07074D';\n  // text-gray-700\n\n  public get classes(): string[]{\n    const size = this.size ? `text-${this.size}` : '';\n    const labelColor = this.labelColor ? `text-[${this.labelColor}]` : '';\n    return [size, labelColor];\n  }\n}\n",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-checkbox',\r\n  template: `\r\n  <div class=\"flex items-center\" *ngIf=\"type != 'toggle'\">\r\n            <input\r\n              type=\"{{type}}\"\r\n              name=\"{{name}}\"\r\n              id=\"radioButton1\"\r\n              class=\"h-5 w-5\"\r\n            />\r\n            <label\r\n              for=\"radioButton1\"\r\n              class=\"pl-3 font-medium\"\r\n              [ngClass]=\"classes\"\r\n              *ngIf=\"withLabel\"\r\n              [ngStyle]=\"{ 'color': labelColor }\"\r\n            >\r\n              {{label}}\r\n            </label>\r\n  </div>\r\n  <div class=\"\" *ngIf=\"type === 'toggle'\">\r\n    <div class=\"relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in\">\r\n        <input \r\n          type=\"checkbox\" \r\n          name=\"{{name}}\" \r\n          id=\"toggle\" \r\n          class=\"toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer\"/>\r\n        <label \r\n          for=\"toggle\" \r\n          class=\"toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer\"></label>\r\n      </div>\r\n      <label for=\"toggle\"  \r\n            [ngClass]=\"classes\"\r\n            [ngStyle]=\"{ 'color': labelColor }\">{{label}}</label>\r\n    </div>\r\n          `,\r\n  styleUrls: ['./checkbox.component.scss']\r\n})\r\nexport class CheckboxComponent {\r\n  @Input() name: string = '';\r\n  @Input() label = 'nothing';\r\n  @Input() withLabel = false;\r\n  @Input() type: 'checkbox' | 'radio' | 'toggle' = 'checkbox';\r\n  @Input() size: 'xs' | 'sm' | 'base' | 'lg' | 'xl' = 'base';\r\n  @Input() labelColor = '#07074D';\r\n  // text-gray-700\r\n\r\n  public get classes(): string[]{\r\n    const size = this.size ? `text-${this.size}` : '';\r\n    // const labelColor = this.labelColor ? `text-[${this.labelColor}]` : '';\r\n    return [size];\r\n  }\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -511,9 +491,67 @@
                         "name": "classes",
                         "type": "[]",
                         "returnType": "string[]",
-                        "line": 47
+                        "line": 50
                     }
                 }
+            }
+        },
+        {
+            "name": "FeaturedIconComponent",
+            "id": "component-FeaturedIconComponent-8f4332235f7a1b4c8ad3a622c5c1d2cc2c7c95f6c0d9dcd79de16e258e19fcaa72032ceeebb2ca664d48566db0e86d0b05a0c49f7c971eb0fbabb6d252210a68",
+            "file": "src/stories/featured-icon/featured-icon.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-featured-icon",
+            "styleUrls": [],
+            "styles": [],
+            "template": "  <div\n    class=\"\n  w-10\n  h-10\n  rounded-full\n  flex\n  items-center\n  justify-center\n  relative\n  top-[-25%]\n  right-[-90%]\n  text-black\n\"\n    [ngClass]=\"['bg-' + background + '-100']\"\n  >\n    <i [ngClass]=\"['bi', 'bi-' + iconName]\"></i>\n  </div>\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "background",
+                    "defaultValue": "'primary'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 31,
+                    "type": "\"primary\" | \"warning\" | \"danger\" | \"info\" | \"success\"",
+                    "decorators": []
+                },
+                {
+                    "name": "iconName",
+                    "defaultValue": "'person'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 28,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-featured-icon',\n  template: `\n    <div\n      class=\"\n    w-10\n    h-10\n    rounded-full\n    flex\n    items-center\n    justify-center\n    relative\n    top-[-25%]\n    right-[-90%]\n    text-black\n  \"\n      [ngClass]=\"['bg-' + background + '-100']\"\n    >\n      <i [ngClass]=\"['bi', 'bi-' + iconName]\"></i>\n    </div>\n  `,\n  styleUrls: [],\n})\nexport class FeaturedIconComponent {\n  @Input()\n  iconName: string = 'person';\n\n  @Input()\n  background: 'primary' | 'warning' | 'danger' | 'info' | 'success' = 'primary';\n\n  constructor() {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 31
             }
         },
         {
@@ -590,57 +628,24 @@
             "stylesData": ""
         },
         {
-<<<<<<< HEAD
-            "name": "LabelComponent",
-            "id": "component-LabelComponent-93c5a4c30161673bd82bffd88eda9d3b700f36e31526d1dc7acbca35edbbbabc29cc4f4a1c3a023dbcb67fb714a8e49858e99b1d1973dfbad18beb0710321407",
-            "file": "src/stories/label/label.component.ts",
-=======
             "name": "InputComponent",
-            "id": "component-InputComponent-6b84cbe2092d4e1ea51704f58e8327401ed57afda931ca6d2a67ecabaf3f8783043595dabcaeb3f911c0134dc4e0ba29288021694320191a07af507209a440bc",
+            "id": "component-InputComponent-193ecca1bbdc233241ddfb549eb17def1b83ef98bebc8162aa076f887f54ae49d7901165bea76ef95b7a9bda384b905e64536fd60aec150c6db3fbd11727832a",
             "file": "src/stories/input/input.component.ts",
->>>>>>> 55608a64475db2400640fc7a8a0f2f4459880821
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
             "outputs": [],
             "providers": [],
-<<<<<<< HEAD
-            "selector": "app-label",
-            "styleUrls": [
-                "./label.component.scss"
-            ],
-            "styles": [],
-            "template": "<div\n  [ngClass]=\"[\n    'text-' + type + '-500',\n    'bg-' + type + '-100',\n    'px-3',\n    'rounded-3xl',\n    'w-fit'\n  ]\"\n>\n  <div\n    class=\"inline-block w-2 h-2 rounded-full mr-2\"\n    [ngClass]=\"'bg-' + type + '-500'\"\n    *ngIf=\"!hasBackground\"\n  ></div>\n  <span>In progress</span>\n</div>\n",
-=======
             "selector": "app-input",
             "styleUrls": [
                 "./input.component.scss"
             ],
             "styles": [],
-            "template": "<div class=\"\">\n        <label\n          for=\"fName\"\n          *ngIf=\"withLabel\"\n          class=\"block mb-1\n          text-{{size}} text-[#07074D]\"\n        >\n          {{label}}\n        </label>\n        <input\n          type=\"{{type}}\"\n          name=\"{{name}}\"\n          id=\"fName\"\n          placeholder=\"{{placeholder}}\"\n          [ngStyle]=\"{\n            'background-color': backgroundColor,\n            'color': textColor\n          }\"\n          class=\"\n          {{rounded}}\n          border\n          border-[{{borderColor}}]\n          py-2 px-3\n          w-full\n          text-{{size}}\n          outline-none\n          focus:border-[{{focusBorderColor}}]\n          focus:shadow-{{shadow}}}\"\n        />\n      </div>\n",
->>>>>>> 55608a64475db2400640fc7a8a0f2f4459880821
+            "template": "<div class=\"\">\n        <label\n          for=\"fName\"\n          *ngIf=\"withLabel\"\n          class=\"block mb-1\n          text-{{size}} text-[#07074D]\"\n        >\n          {{label}}\n        </label>\n        <input\n          type=\"{{type}}\"\n          name=\"{{name}}\"\n          id=\"fName\"\n          placeholder=\"{{placeholder}}\"\n          [ngStyle]=\"{\n            'background-color': backgroundColor,\n            'color': textColor\n          }\"\n          class=\"\n          {{rounded}}\n          border\n          border-[{{borderColor}}]\n          py-2 px-3\n          w-full\n          text-{{size}}\n          outline-none\n          focus:border-[#0094ff]\n          focus:shadow-md\"\n        />\n      </div>\n",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [
                 {
-<<<<<<< HEAD
-                    "name": "hasBackground",
-                    "defaultValue": "false",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "rawdescription": "\n\nWhat should be the background color?\n",
-                    "description": "<p>What should be the background color?</p>\n",
-                    "line": 30,
-                    "type": "boolean",
-                    "decorators": []
-                },
-                {
-                    "name": "text",
-                    "defaultValue": "'Content'",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 39,
-=======
                     "name": "backgroundColor",
                     "defaultValue": "'white'",
                     "deprecated": false,
@@ -727,21 +732,11 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 46,
->>>>>>> 55608a64475db2400640fc7a8a0f2f4459880821
                     "type": "string",
                     "decorators": []
                 },
                 {
                     "name": "type",
-<<<<<<< HEAD
-                    "defaultValue": "'primary'",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "rawdescription": "\n\nLabel type\n",
-                    "description": "<p>Label type</p>\n",
-                    "line": 36,
-                    "type": "\"primary\" | \"warning\" | \"danger\" | \"info\" | \"success\"",
-=======
                     "defaultValue": "'text'",
                     "deprecated": false,
                     "deprecationMessage": "",
@@ -756,7 +751,6 @@
                     "deprecationMessage": "",
                     "line": 43,
                     "type": "boolean",
->>>>>>> 55608a64475db2400640fc7a8a0f2f4459880821
                     "decorators": []
                 }
             ],
@@ -770,25 +764,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-<<<<<<< HEAD
-            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-label',\n  template: `\n    <div\n      [ngClass]=\"[\n        'text-' + type + '-500',\n        'bg-' + type + '-100',\n        'px-3',\n        'rounded-3xl',\n        'w-fit'\n      ]\"\n    >\n      <div\n        class=\"inline-block w-2 h-2 rounded-full mr-2\"\n        [ngClass]=\"'bg-' + type + '-500'\"\n        *ngIf=\"!hasBackground\"\n      ></div>\n      <span>In progress</span>\n    </div>\n  `,\n  styleUrls: ['./label.component.scss'],\n})\nexport class LabelComponent {\n  /**\n   * What should be the background color?\n   */\n  @Input()\n  hasBackground: boolean = false;\n\n  /**\n   * Label type\n   */\n  @Input()\n  type: 'primary' | 'warning' | 'danger' | 'info' | 'success' = 'primary';\n\n  @Input()\n  text: string = 'Content';\n\n  constructor() {}\n}\n",
-            "assetsDirs": [],
-            "styleUrlsData": [
-                {
-                    "data": ".avatar::before {\r\n  content: \"\";\r\n  width: 50px;\r\n  height: 50px;\r\n  background-color: red;\r\n  border-radius: 100%;\r\n}\r\n",
-                    "styleUrl": "./label.component.scss"
-                }
-            ],
-            "stylesData": "",
-            "constructorObj": {
-                "name": "constructor",
-                "description": "",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "args": [],
-                "line": 39
-=======
-            "sourceCode": "import { Component, OnInit, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-input',\n  template: `\n    <div class=\"\">\n            <label\n              for=\"fName\"\n              *ngIf=\"withLabel\" \n              class=\"block mb-1 \n              text-{{size}} text-[#07074D]\"\n            >\n              {{label}}\n            </label>\n            <input\n              type=\"{{type}}\"\n              name=\"{{name}}\"\n              id=\"fName\"\n              placeholder=\"{{placeholder}}\"\n              [ngStyle]=\"{ \n                'background-color': backgroundColor,\n                'color': textColor\n              }\"\n              class=\"\n              {{rounded}} \n              border \n              border-[{{borderColor}}] \n              py-2 px-3 \n              w-full\n              text-{{size}}\n              outline-none \n              focus:border-[{{focusBorderColor}}] \n              focus:shadow-{{shadow}}}\"\n            />\n          </div>\n  `,\n  styleUrls: ['./input.component.scss']\n})\nexport class InputComponent {\n  @Input() name: string ='';\n  @Input() type: 'text' | 'email' | 'password' = 'text';\n  @Input() label = 'nothing';\n  @Input() withLabel = false;\n  @Input() placeholder = 'nothing';\n  @Input() backgroundColor = 'white';\n  @Input() textColor = 'black';\n  @Input() borderColor = '#e0e0e0';\n  @Input() focusBorderColor = '#0094ff';\n  @Input() size: 'xs' | 'sm' | 'base' | 'lg' | 'xl' = 'base';\n  @Input() shadow: 'sm' | 'md' | 'lg' | 'xl' = 'sm';\n  @Input() rounded: 'rounded-none' | 'rounded-sm' | 'rounded-md' | 'rounded-lg' | 'rounded-full' = 'rounded-md';\n\n\n}\n",
+            "sourceCode": "import { Component, OnInit, Input } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-input',\r\n  template: `\r\n    <div class=\"\">\r\n            <label\r\n              for=\"fName\"\r\n              *ngIf=\"withLabel\" \r\n              class=\"block mb-1 \r\n              text-{{size}} text-[#07074D]\"\r\n            >\r\n              {{label}}\r\n            </label>\r\n            <input\r\n              type=\"{{type}}\"\r\n              name=\"{{name}}\"\r\n              id=\"fName\"\r\n              placeholder=\"{{placeholder}}\"\r\n              [ngStyle]=\"{ \r\n                'background-color': backgroundColor,\r\n                'color': textColor\r\n              }\"\r\n              class=\"\r\n              {{rounded}} \r\n              border \r\n              border-[{{borderColor}}] \r\n              py-2 px-3 \r\n              w-full\r\n              text-{{size}}\r\n              outline-none \r\n              focus:border-[#0094ff] \r\n              focus:shadow-md\"\r\n            />\r\n          </div>\r\n  `,\r\n  styleUrls: ['./input.component.scss']\r\n})\r\nexport class InputComponent {\r\n  @Input() name: string ='';\r\n  @Input() type: 'text' | 'email' | 'password' = 'text';\r\n  @Input() label = 'nothing';\r\n  @Input() withLabel = false;\r\n  @Input() placeholder = 'nothing';\r\n  @Input() backgroundColor = 'white';\r\n  @Input() textColor = 'black';\r\n  @Input() borderColor = '#e0e0e0';\r\n  @Input() focusBorderColor = '#0094ff';\r\n  @Input() size: 'xs' | 'sm' | 'base' | 'lg' | 'xl' = 'base';\r\n  @Input() shadow: 'sm' | 'md' | 'lg' | 'xl' = 'sm';\r\n  @Input() rounded: 'rounded-none' | 'rounded-sm' | 'rounded-md' | 'rounded-lg' | 'rounded-full' = 'rounded-md';\r\n\r\n\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -797,6 +773,77 @@
                 }
             ],
             "stylesData": ""
+        },
+        {
+            "name": "LabelComponent",
+            "id": "component-LabelComponent-9fc21687e1ba4ca939bf5cdee0e3d0218df7e147cde115daaa77332eaaf3a1696dedaff0bfab36ed8a5623a3dca9151e6ade8fccfeda75598180e3bf1dfe17a8",
+            "file": "src/stories/label/label.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-label",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<div\n  [ngClass]=\"[\n    'text-' + type + '-500',\n    hasBackground ? 'bg-' + type + '-100' : 'bg-transparent',\n    'px-3',\n    'rounded-3xl',\n    'w-fit'\n  ]\"\n>\n  <div\n    class=\"inline-block w-2 h-2 rounded-full mr-2\"\n    [ngClass]=\"'bg-' + type + '-500'\"\n    *ngIf=\"!hasBackground\"\n  ></div>\n  <span>{{ text }}</span>\n</div>\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "hasBackground",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nWhat should be the background color?\n",
+                    "description": "<p>What should be the background color?</p>\n",
+                    "line": 30,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "text",
+                    "defaultValue": "'Content'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 39,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "'primary'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nLabel type\n",
+                    "description": "<p>Label type</p>\n",
+                    "line": 36,
+                    "type": "\"primary\" | \"warning\" | \"danger\" | \"info\" | \"success\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-label',\n  template: `\n    <div\n      [ngClass]=\"[\n        'text-' + type + '-500',\n        hasBackground ? 'bg-' + type + '-100' : 'bg-transparent',\n        'px-3',\n        'rounded-3xl',\n        'w-fit'\n      ]\"\n    >\n      <div\n        class=\"inline-block w-2 h-2 rounded-full mr-2\"\n        [ngClass]=\"'bg-' + type + '-500'\"\n        *ngIf=\"!hasBackground\"\n      ></div>\n      <span>{{ text }}</span>\n    </div>\n  `,\n  styleUrls: [],\n})\nexport class LabelComponent {\n  /**\n   * What should be the background color?\n   */\n  @Input()\n  hasBackground: boolean = false;\n\n  /**\n   * Label type\n   */\n  @Input()\n  type: 'primary' | 'warning' | 'danger' | 'info' | 'success' = 'primary';\n\n  @Input()\n  text: string = 'Content';\n\n  constructor() {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 39
+            }
         },
         {
             "name": "NotificationComponent",
@@ -898,7 +945,6 @@
                         "line": 24
                     }
                 }
->>>>>>> 55608a64475db2400640fc7a8a0f2f4459880821
             }
         },
         {
@@ -983,7 +1029,7 @@
         },
         {
             "name": "SelectComponent",
-            "id": "component-SelectComponent-55077bc5974fa5ac6471083b3d8b7287e281f0f672bb30ef5c6af2eefbc0da00b2bcb3e4eafd25cb65335a0b40e2704fd82d3da2aacf395c5277020d6f28f335",
+            "id": "component-SelectComponent-9142373876bf2e9cfadb3651d55e2ea4254bd17b9f5e5a5929c1e7b37789ccbc974d0129267763454e35cc5590f3b241bd418b5ee49bfd7030653221c993511e",
             "file": "src/stories/select/select.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -995,7 +1041,7 @@
                 "./select.component.scss"
             ],
             "styles": [],
-            "template": "<div>\n  <label for=\"countries\"\n  class=\"block mb-2 font-medium text-gray-900 dark:text-gray-400\"\n  [ngClass]=\"classes\"\n  >{{label}}</label>\n    <select id=\"countries\"\n    class=\"\n    bg-gray-50 border\n    border-gray-300\n    text-gray-900\n    focus:ring-blue-500\n    focus:border-blue-500 block w-full\n    p-2.5 dark:bg-gray-700 dark:border-gray-600\n    dark:placeholder-gray-400 dark:text-white\n    dark:focus:ring-blue-500 dark:focus:border-blue-500\"\n    [ngClass]=\"classes\"\n    >\n    <option selected>Choose a country</option>\n    <option value=\"US\">United States</option>\n    <option value=\"CA\">Canada</option>\n    <option value=\"FR\">France</option>\n    <option value=\"DE\">Germany</option>\n    </select>\n</div>\n",
+            "template": "<div>\n  <label for=\"countries\"\n  class=\"block mb-2 font-medium text-gray-900 dark:text-gray-400\"\n  [ngClass]=\"classes\"\n  [ngStyle]=\"\n    {\n      'color': labelColor\n    }\n  \"\n  >{{label}}</label>\n    <select id=\"countries\"\n    class=\"\n    bg-gray-50 border\n    border-gray-300\n    text-gray-900\n    focus:ring-blue-500\n    focus:border-blue-500 block w-full\n    p-2.5 dark:bg-gray-700 dark:border-gray-600\n    dark:placeholder-gray-400 dark:text-white\n    dark:focus:ring-blue-500 dark:focus:border-blue-500\"\n    [ngClass]=\"classes\"\n    >\n    <option selected>Choose a country</option>\n    <option value=\"US\">United States</option>\n    <option value=\"CA\">Canada</option>\n    <option value=\"FR\">France</option>\n    <option value=\"DE\">Germany</option>\n    </select>\n</div>\n",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [
@@ -1004,7 +1050,7 @@
                     "defaultValue": "'Select an option'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 38,
+                    "line": 43,
                     "type": "string",
                     "decorators": []
                 },
@@ -1013,7 +1059,7 @@
                     "defaultValue": "'#07074D'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 36,
+                    "line": 41,
                     "type": "string",
                     "decorators": []
                 },
@@ -1022,7 +1068,7 @@
                     "defaultValue": "'md'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 37,
+                    "line": 42,
                     "type": "\"none\" | \"sm\" | string | \"md\" | \"lg\" | \"xl\"",
                     "decorators": []
                 },
@@ -1031,7 +1077,7 @@
                     "defaultValue": "'base'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 35,
+                    "line": 40,
                     "type": "\"xs\" | \"sm\" | \"base\" | \"lg\" | \"xl\"",
                     "decorators": []
                 }
@@ -1046,7 +1092,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-select',\n  template: `\n    <div>\n      <label for=\"countries\" \n      class=\"block mb-2 font-medium text-gray-900 dark:text-gray-400\"\n      [ngClass]=\"classes\"\n      >{{label}}</label>\n        <select id=\"countries\" \n        class=\"\n        bg-gray-50 border \n        border-gray-300 \n        text-gray-900  \n        focus:ring-blue-500 \n        focus:border-blue-500 block w-full \n        p-2.5 dark:bg-gray-700 dark:border-gray-600 \n        dark:placeholder-gray-400 dark:text-white \n        dark:focus:ring-blue-500 dark:focus:border-blue-500\"\n        [ngClass]=\"classes\"\n        >\n        <option selected>Choose a country</option>\n        <option value=\"US\">United States</option>\n        <option value=\"CA\">Canada</option>\n        <option value=\"FR\">France</option>\n        <option value=\"DE\">Germany</option>\n        </select>\n    </div>\n    `,\n  styleUrls: ['./select.component.scss']\n})\nexport class SelectComponent {\n\n  @Input() size: 'xs' | 'sm' | 'base' | 'lg' | 'xl' = 'base';\n  @Input() labelColor = '#07074D';\n  @Input() rounded: 'none' | 'sm' | '' | 'md' | 'lg' | 'xl' = 'md';\n  @Input() label = 'Select an option';\n\n\n  public get classes(): string[]{\n    const size = this.size ? `text-${this.size}` : '';\n    const labelColor = this.labelColor ? `text-[${this.labelColor}]` : '';\n    const rounded = this.rounded ? `rounded-${this.rounded}` : '';\n    return [size, labelColor, rounded];\n  }\n}\n",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-select',\r\n  template: `\r\n    <div>\r\n      <label for=\"countries\" \r\n      class=\"block mb-2 font-medium text-gray-900 dark:text-gray-400\"\r\n      [ngClass]=\"classes\"\r\n      [ngStyle]=\"\r\n        {\r\n          'color': labelColor\r\n        }\r\n      \"\r\n      >{{label}}</label>\r\n        <select id=\"countries\" \r\n        class=\"\r\n        bg-gray-50 border \r\n        border-gray-300 \r\n        text-gray-900  \r\n        focus:ring-blue-500 \r\n        focus:border-blue-500 block w-full \r\n        p-2.5 dark:bg-gray-700 dark:border-gray-600 \r\n        dark:placeholder-gray-400 dark:text-white \r\n        dark:focus:ring-blue-500 dark:focus:border-blue-500\"\r\n        [ngClass]=\"classes\"\r\n        >\r\n        <option selected>Choose a country</option>\r\n        <option value=\"US\">United States</option>\r\n        <option value=\"CA\">Canada</option>\r\n        <option value=\"FR\">France</option>\r\n        <option value=\"DE\">Germany</option>\r\n        </select>\r\n    </div>\r\n    `,\r\n  styleUrls: ['./select.component.scss']\r\n})\r\nexport class SelectComponent {\r\n\r\n  @Input() size: 'xs' | 'sm' | 'base' | 'lg' | 'xl' = 'base';\r\n  @Input() labelColor = '#07074D';\r\n  @Input() rounded: 'none' | 'sm' | '' | 'md' | 'lg' | 'xl' = 'md';\r\n  @Input() label = 'Select an option';\r\n\r\n\r\n  public get classes(): string[]{\r\n    const size = this.size ? `text-${this.size}` : '';\r\n    // const labelColor = this.labelColor ? `text-[${this.labelColor}]` : '';\r\n    const rounded = this.rounded ? `rounded-${this.rounded}` : '';\r\n    return [size, rounded];\r\n  }\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -1062,14 +1108,72 @@
                         "name": "classes",
                         "type": "[]",
                         "returnType": "string[]",
-                        "line": 41
+                        "line": 46
                     }
                 }
             }
         },
         {
+            "name": "StatusWidgetComponent",
+            "id": "component-StatusWidgetComponent-47907fbd5ef99eda53e8e6e1d5e68f1cbcfebf8cbc548325fc184d3916cdd9b82c4ae2388b2e6ea565e1a1b58543d360a168385200231bd6ac67fd58ad9c1f96",
+            "file": "src/stories/status-widget/status-widget.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-status-widget",
+            "styleUrls": [],
+            "styles": [],
+            "template": "div",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "title",
+                    "defaultValue": "'Title'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "value",
+                    "defaultValue": "undefined",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string | number",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-status-widget',\r\n  template: ` div `,\r\n})\r\nexport class StatusWidgetComponent {\r\n  @Input()\r\n  title: string = 'Title';\r\n\r\n  @Input()\r\n  value?: string | number = undefined;\r\n\r\n  constructor() {}\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 12
+            }
+        },
+        {
             "name": "StepperComponent",
-            "id": "component-StepperComponent-63d028d1175fe9f2f0662dfdfabf2025213fa4f779319d873232bad4bf27475c73a7fef06b34c34f8a8b1fa08df1513553769012edfe52c7a1be4b9fe8afe5e6",
+            "id": "component-StepperComponent-3b67fee9a77a78cee850b8d78d9bc9a1b5f7788bbced5eb880a67529e3c4813b6f6c7e146da8e4f5efb1df360c937ce53ce2c6daadc2e29d4cc49b82856f0332",
             "file": "src/stories/stepper/stepper.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1081,7 +1185,7 @@
                 "./stepper.component.scss"
             ],
             "styles": [],
-            "template": "<!-- component -->\n<div class=\"p-5\">\n  <div class=\"mx-4 p-4\">\n      <div class=\"flex items-center\">\n          <ng-container *ngFor=\"let item of steps; let i=index\">\n            <div class=\"flex items-center relative rounded-full cursor-pointer text-teal-600\" (click)=\"onChangeStep(i)\" [ngClass]=\"{'bg-teal-600 text-white-600': item.completed && activeElement!=i}\">\n                <div class=\"rounded-full transition duration-500 ease-in-out h-12 w-12 py-3 border-2 step-number\" [ngClass]=\"{'text-teal-600': !item.completed && activeElement!=i, 'text-teal-600': activeElement==i, 'border-teal-600': activeElement==i || item.completed, 'text-gray-300': activeElement!=i && !item.completed, 'text-white': item.completed && activeElement!=i}\">\n                    {{i+1}}\n                </div>\n                <div class=\"absolute top-0 -ml-10 text-center mt-16 w-32 text-xs font-medium uppercase\"  [ngClass]=\"{'text-teal-600': !item.completed && activeElement!=i, 'text-teal-600': activeElement==i || item.completed, 'text-gray-300': activeElement!=i && !item.completed}\">{{ item.title }}</div>\n            </div>\n            <div class=\"flex-auto border-t-2 transition duration-500 ease-in-out\" [ngClass]=\"{'border-teal-600': item.completed, 'border-gray-300': !item.completed}\" *ngIf=\"i!=steps.length-1\"></div>\n          </ng-container>\n      </div>\n  </div>\n</div>\n",
+            "template": "<!-- component -->\n<div class=\"p-5\">\n  <div class=\"mx-4 p-4\">\n    <div class=\"flex items-center\">\n      <ng-container *ngFor=\"let item of steps; let i = index\">\n        <div\n          class=\"flex items-center relative rounded-full cursor-pointer text-teal-600\"\n          (click)=\"onChangeStep(i)\"\n          [ngClass]=\"{\n            'bg-teal-600 text-white-600':\n              item.completed && activeElement != i\n          }\"\n        >\n          <div\n            class=\"rounded-full transition duration-500 ease-in-out h-12 w-12 py-3 border-2 step-number\"\n            [ngClass]=\"{\n              'text-teal-600': !item.completed && activeElement != i,\n              'text-teal-600': activeElement == i,\n              'border-teal-600': activeElement == i || item.completed,\n              'text-gray-300': activeElement != i && !item.completed,\n              'text-white': item.completed && activeElement != i\n            }\"\n          >\n            {{ i + 1 }}\n          </div>\n          <div\n            class=\"absolute top-0 -ml-10 text-center mt-16 w-32 text-xs font-medium uppercase\"\n            [ngClass]=\"{\n              'text-teal-600': !item.completed && activeElement != i,\n              'text-teal-600': activeElement == i || item.completed,\n              'text-gray-300': activeElement != i && !item.completed\n            }\"\n          >\n            {{ item.title }}\n          </div>\n        </div>\n        <div\n          class=\"flex-auto border-t-2 transition duration-500 ease-in-out\"\n          [ngClass]=\"{\n            'border-teal-600': item.completed,\n            'border-gray-300': !item.completed\n          }\"\n          *ngIf=\"i != steps.length - 1\"\n        ></div>\n      </ng-container>\n    </div>\n  </div>\n</div>\n",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [
@@ -1089,16 +1193,16 @@
                     "name": "icon",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 32,
+                    "line": 64,
                     "type": "string",
                     "decorators": []
                 },
                 {
                     "name": "steps",
-                    "defaultValue": "[\r\n    {title: 'Step 1', completed: true},\r\n    {title: 'Step 2', completed: true},\r\n    {title: 'Step 3', completed: false}\r\n  ]",
+                    "defaultValue": "[\r\n    { title: 'Step 1', completed: true },\r\n    { title: 'Step 2', completed: true },\r\n    { title: 'Step 3', completed: false },\r\n  ]",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 26,
+                    "line": 58,
                     "type": "literal type[]",
                     "decorators": []
                 }
@@ -1113,7 +1217,7 @@
                     "type": "number",
                     "optional": false,
                     "description": "",
-                    "line": 31
+                    "line": 63
                 }
             ],
             "methodsClass": [
@@ -1130,7 +1234,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 35,
+                    "line": 66,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "jsdoctags": [
@@ -1153,7 +1257,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-stepper',\r\n  template: `\r\n  <!-- component -->\r\n  <div class=\"p-5\">\r\n    <div class=\"mx-4 p-4\">\r\n        <div class=\"flex items-center\">\r\n            <ng-container *ngFor=\"let item of steps; let i=index\">\r\n              <div class=\"flex items-center relative rounded-full cursor-pointer text-teal-600\" (click)=\"onChangeStep(i)\" [ngClass]=\"{'bg-teal-600 text-white-600': item.completed && activeElement!=i}\">\r\n                  <div class=\"rounded-full transition duration-500 ease-in-out h-12 w-12 py-3 border-2 step-number\" [ngClass]=\"{'text-teal-600': !item.completed && activeElement!=i, 'text-teal-600': activeElement==i, 'border-teal-600': activeElement==i || item.completed, 'text-gray-300': activeElement!=i && !item.completed, 'text-white': item.completed && activeElement!=i}\">\r\n                      {{i+1}}\r\n                  </div>\r\n                  <div class=\"absolute top-0 -ml-10 text-center mt-16 w-32 text-xs font-medium uppercase\"  [ngClass]=\"{'text-teal-600': !item.completed && activeElement!=i, 'text-teal-600': activeElement==i || item.completed, 'text-gray-300': activeElement!=i && !item.completed}\">{{ item.title }}</div>\r\n              </div>\r\n              <div class=\"flex-auto border-t-2 transition duration-500 ease-in-out\" [ngClass]=\"{'border-teal-600': item.completed, 'border-gray-300': !item.completed}\" *ngIf=\"i!=steps.length-1\"></div>\r\n            </ng-container>\r\n        </div>\r\n    </div>\r\n  </div>\r\n  `,\r\n  styleUrls: ['./stepper.component.scss']\r\n})\r\nexport default class StepperComponent {\r\n  @Input() steps: {title: string, completed: boolean}[] = [\r\n    {title: 'Step 1', completed: true},\r\n    {title: 'Step 2', completed: true},\r\n    {title: 'Step 3', completed: false}\r\n  ];\r\n  activeElement = 0;\r\n  @Input() icon!: string;\r\n\r\n\r\n  onChangeStep(i: number) {\r\n    console.log(i);\r\n    this.activeElement = i;\r\n  }\r\n\r\n}",
+            "sourceCode": "import { Component, Input } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-stepper',\r\n  template: `\r\n    <!-- component -->\r\n    <div class=\"p-5\">\r\n      <div class=\"mx-4 p-4\">\r\n        <div class=\"flex items-center\">\r\n          <ng-container *ngFor=\"let item of steps; let i = index\">\r\n            <div\r\n              class=\"flex items-center relative rounded-full cursor-pointer text-teal-600\"\r\n              (click)=\"onChangeStep(i)\"\r\n              [ngClass]=\"{\r\n                'bg-teal-600 text-white-600':\r\n                  item.completed && activeElement != i\r\n              }\"\r\n            >\r\n              <div\r\n                class=\"rounded-full transition duration-500 ease-in-out h-12 w-12 py-3 border-2 step-number\"\r\n                [ngClass]=\"{\r\n                  'text-teal-600': !item.completed && activeElement != i,\r\n                  'text-teal-600': activeElement == i,\r\n                  'border-teal-600': activeElement == i || item.completed,\r\n                  'text-gray-300': activeElement != i && !item.completed,\r\n                  'text-white': item.completed && activeElement != i\r\n                }\"\r\n              >\r\n                {{ i + 1 }}\r\n              </div>\r\n              <div\r\n                class=\"absolute top-0 -ml-10 text-center mt-16 w-32 text-xs font-medium uppercase\"\r\n                [ngClass]=\"{\r\n                  'text-teal-600': !item.completed && activeElement != i,\r\n                  'text-teal-600': activeElement == i || item.completed,\r\n                  'text-gray-300': activeElement != i && !item.completed\r\n                }\"\r\n              >\r\n                {{ item.title }}\r\n              </div>\r\n            </div>\r\n            <div\r\n              class=\"flex-auto border-t-2 transition duration-500 ease-in-out\"\r\n              [ngClass]=\"{\r\n                'border-teal-600': item.completed,\r\n                'border-gray-300': !item.completed\r\n              }\"\r\n              *ngIf=\"i != steps.length - 1\"\r\n            ></div>\r\n          </ng-container>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  `,\r\n  styleUrls: ['./stepper.component.scss'],\r\n})\r\nexport default class StepperComponent {\r\n  @Input() steps: { title: string; completed: boolean }[] = [\r\n    { title: 'Step 1', completed: true },\r\n    { title: 'Step 2', completed: true },\r\n    { title: 'Step 3', completed: false },\r\n  ];\r\n  activeElement = 0;\r\n  @Input() icon!: string;\r\n\r\n  onChangeStep(i: number) {\r\n    console.log(i);\r\n    this.activeElement = i;\r\n  }\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -1302,21 +1406,13 @@
     "modules": [
         {
             "name": "AppModule",
-<<<<<<< HEAD
-            "id": "module-AppModule-9f01562cf681f6f4d4ff520e713be433f6150f9b77767d3ba42f4425a5f4edab84895f5c9848ebba0fa03f7f5088117a315e78b60d74e4945534ec9e6d005b83",
-=======
             "id": "module-AppModule-2f52ea3304122513583e488a13f3ba43a9338a27b2503aec31e50562a133e2a955ad89fc691c5695d97d98418ad94a25f6d2adbc621ce739ac0fb9c1099644d9",
->>>>>>> 55608a64475db2400640fc7a8a0f2f4459880821
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-<<<<<<< HEAD
-            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\nimport ButtonComponent from 'src/stories/button.component';\r\nimport { StoriesModule } from 'src/stories/stories.module';\r\n\r\nimport { AppRoutingModule } from './app-routing.module';\r\nimport { AppComponent } from './app.component';\r\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\r\n\r\n@NgModule({\r\n  declarations: [\r\n    AppComponent,\r\n  ],\r\n  imports: [\r\n    BrowserModule,\r\n    AppRoutingModule,\r\n    StoriesModule,\r\n    BrowserAnimationsModule\r\n  ],\r\n  providers: [],\r\n  bootstrap: [AppComponent]\r\n})\r\nexport class AppModule { }\r\n",
-=======
             "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\nimport ButtonComponent from 'src/stories/button.component';\r\nimport { StoriesModule } from 'src/stories/stories.module';\r\n\r\nimport { AppRoutingModule } from './app-routing.module';\r\nimport { AppComponent } from './app.component';\r\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\r\n\r\n@NgModule({\r\n  declarations: [\r\n    AppComponent,\r\n  ],\r\n  imports: [\r\n    BrowserModule,\r\n    AppRoutingModule,\r\n    BrowserAnimationsModule,\r\n    StoriesModule,\r\n  ],\r\n  providers: [],\r\n  bootstrap: [AppComponent]\r\n})\r\nexport class AppModule { }\r\n",
->>>>>>> 55608a64475db2400640fc7a8a0f2f4459880821
             "children": [
                 {
                     "type": "providers",
@@ -1397,29 +1493,13 @@
         },
         {
             "name": "StoriesModule",
-<<<<<<< HEAD
-<<<<<<< HEAD
-            "id": "module-StoriesModule-ee865170f0f14c7dfd7a0e8dd54fb359ed4e9449b3e061d43ac7db5b130c6a4e9d36b76a0d088b71457e898457372d3946c155c92b6ee97bfa7cd531ecf38615",
-=======
-            "id": "module-StoriesModule-b4a86101c42e74b87add34234f81b0c6a81dd7f81c970dae185c6b41d38c41945f66539a1a6306f2d01ea92efd44c45f41ca150aa1f5be83801ad1e710678cd0",
->>>>>>> 9235b21f578bd0fae47ba4f91c2b0452e21efc82
-=======
-            "id": "module-StoriesModule-44f3122dd59648514114e124a7ad3222d7e355af790a670d19cc0c3fcbdcf0363bd1667e4c45c87831f57faa0da918bca269eeeb8f3a4a5ba1136452a595a0ef",
->>>>>>> 55608a64475db2400640fc7a8a0f2f4459880821
+            "id": "module-StoriesModule-fc1639be6c123f6fd5f8bb4aab951283e8d08f95dd260646fda8f7a45c13518c73f8f83f87f4f645eafbced90379c2ec37c766ce7ab89e620e8c781f4b5d61d1",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/stories/stories.module.ts",
             "methods": [],
-<<<<<<< HEAD
-<<<<<<< HEAD
-            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { CommonModule } from '@angular/common';\r\nimport ButtonComponent from './button.component';\r\nimport AvatarComponent from './avatar/avatar.component';\nimport { LabelComponent } from './label/label.component';\r\n\r\n\r\n\r\n@NgModule({\r\n  declarations: [\r\n    ButtonComponent,\r\n    AvatarComponent,\r\n    LabelComponent\r\n  ],\r\n  imports: [\r\n    CommonModule\r\n  ],\r\n  exports: [\r\n    ButtonComponent\r\n  ]\r\n})\r\nexport class StoriesModule { }\r\n",
-=======
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport ButtonComponent from './button.component';\nimport AvatarComponent from './avatar/avatar.component';\nimport BadgeComponent from './badge/badge.component';\n\n\n\n@NgModule({\n  declarations: [\n    ButtonComponent,\n    AvatarComponent,\n    BadgeComponent\n  ],\n  imports: [\n    CommonModule\n  ],\n  exports: [\n    ButtonComponent\n  ]\n})\nexport class StoriesModule { }\n",
->>>>>>> 9235b21f578bd0fae47ba4f91c2b0452e21efc82
-=======
-            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { CommonModule } from '@angular/common';\r\nimport ButtonComponent from './button.component';\r\nimport { InputComponent } from './input/input.component';\r\nimport AvatarComponent from './avatar/avatar.component';\r\nimport { CheckboxComponent } from './checkbox/checkbox.component';\r\nimport { SelectComponent } from './select/select.component';\r\n\r\n\r\nimport BadgeComponent from './badge/badge.component';\r\nimport TabsComponent from './tabs/tabs.component';\r\nimport NotificationComponent from './notification/notification.component';\r\nimport StepperComponent from './stepper/stepper.component';\r\n\r\n@NgModule({\r\n  declarations: [\r\n    ButtonComponent,\r\n    AvatarComponent,\r\n    InputComponent,\r\n    CheckboxComponent,\r\n    SelectComponent,\r\n    BadgeComponent,\r\n    TabsComponent,\r\n    NotificationComponent,\r\n    StepperComponent\r\n  ],\r\n  imports: [\r\n    CommonModule\r\n  ],\r\n  exports: [\r\n    // ButtonComponent\r\n  ]\r\n})\r\nexport class StoriesModule { }\r\n",
->>>>>>> 55608a64475db2400640fc7a8a0f2f4459880821
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { CommonModule } from '@angular/common';\r\nimport ButtonComponent from './button.component';\r\nimport { InputComponent } from './input/input.component';\r\nimport AvatarComponent from './avatar/avatar.component';\r\n\r\nimport { LabelComponent } from './label/label.component';\r\nimport { CheckboxComponent } from './checkbox/checkbox.component';\r\nimport { SelectComponent } from './select/select.component';\r\n\r\nimport BadgeComponent from './badge/badge.component';\r\nimport TabsComponent from './tabs/tabs.component';\r\nimport NotificationComponent from './notification/notification.component';\r\nimport StepperComponent from './stepper/stepper.component';\nimport { FeaturedIconComponent } from './featured-icon/featured-icon.component';\r\n\r\n@NgModule({\r\n  declarations: [\r\n    ButtonComponent,\r\n    AvatarComponent,\r\n    LabelComponent,\r\n    InputComponent,\r\n    CheckboxComponent,\r\n    SelectComponent,\r\n    BadgeComponent,\r\n    TabsComponent,\r\n    NotificationComponent,\r\n    StepperComponent,\r\n    FeaturedIconComponent,\r\n  ],\r\n  imports: [CommonModule],\r\n  exports: [\r\n    // ButtonComponent\r\n    LabelComponent,\r\n  ],\r\n})\r\nexport class StoriesModule {}\r\n",
             "children": [
                 {
                     "type": "providers",
@@ -1438,13 +1518,16 @@
                             "name": "ButtonComponent"
                         },
                         {
-<<<<<<< HEAD
-                            "name": "LabelComponent"
-=======
                             "name": "CheckboxComponent"
                         },
                         {
+                            "name": "FeaturedIconComponent"
+                        },
+                        {
                             "name": "InputComponent"
+                        },
+                        {
+                            "name": "LabelComponent"
                         },
                         {
                             "name": "NotificationComponent"
@@ -1457,7 +1540,6 @@
                         },
                         {
                             "name": "TabsComponent"
->>>>>>> 55608a64475db2400640fc7a8a0f2f4459880821
                         }
                     ]
                 },
@@ -1467,7 +1549,11 @@
                 },
                 {
                     "type": "exports",
-                    "elements": []
+                    "elements": [
+                        {
+                            "name": "LabelComponent"
+                        }
+                    ]
                 },
                 {
                     "type": "bootstrap",
@@ -1513,12 +1599,16 @@
                 "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
             },
             {
-<<<<<<< HEAD
                 "name": "Danger",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/label/label.stories.ts",
-=======
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "DefaultCheckbox",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1543,7 +1633,6 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/select/select.stories.ts",
->>>>>>> 55608a64475db2400640fc7a8a0f2f4459880821
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1570,17 +1659,10 @@
                 "defaultValue": "{\r\n  production: false\r\n}"
             },
             {
-<<<<<<< HEAD
-                "name": "Info",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/label/label.stories.ts",
-=======
                 "name": "Error",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/notification/notification.stories.ts",
->>>>>>> 55608a64475db2400640fc7a8a0f2f4459880821
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1591,6 +1673,26 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/avatar/avatar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Image",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/featured-icon/featured-icon.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Info",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/label/label.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1761,6 +1863,16 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/tabs/Tabs.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Person",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/featured-icon/featured-icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1826,12 +1938,6 @@
                 "defaultValue": "Template.bind({})"
             },
             {
-<<<<<<< HEAD
-                "name": "Success",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/label/label.stories.ts",
-=======
                 "name": "Small",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1865,8 +1971,17 @@
                 "name": "Success",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/label/label.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Success",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/notification/notification.stories.ts",
->>>>>>> 55608a64475db2400640fc7a8a0f2f4459880821
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1914,29 +2029,6 @@
             },
             {
                 "name": "Template",
-<<<<<<< HEAD
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/label/label.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<LabelComponent>",
-                "defaultValue": "(args: LabelComponent) => ({\r\n  props: args,\r\n})"
-            },
-            {
-                "name": "Warning",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/label/label.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "WithName",
-=======
->>>>>>> 9235b21f578bd0fae47ba4f91c2b0452e21efc82
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/badge/Badge.stories.ts",
@@ -1953,7 +2045,17 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<CheckboxComponent>",
-                "defaultValue": "(args: CheckboxComponent) => ({\n    props: args,\n})"
+                "defaultValue": "(args: CheckboxComponent) => ({\r\n    props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/featured-icon/featured-icon.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<FeaturedIconComponent>",
+                "defaultValue": "(\r\n  args: FeaturedIconComponent\r\n) => ({\r\n  props: args,\r\n})"
             },
             {
                 "name": "Template",
@@ -1963,7 +2065,17 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<InputComponent>",
-                "defaultValue": "(args: InputComponent) => ({\n  props: args,\n})"
+                "defaultValue": "(args: InputComponent) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/label/label.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<LabelComponent>",
+                "defaultValue": "(args: LabelComponent) => ({\r\n  props: args,\r\n})"
             },
             {
                 "name": "Template",
@@ -1979,6 +2091,16 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/select/select.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<SelectComponent>",
+                "defaultValue": "(args: SelectComponent) => ({\r\n        props: args,\r\n    })"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/stepper/stepper.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -1989,11 +2111,11 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/select/select.stories.ts",
+                "file": "src/stories/status-widget/status-widget.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<SelectComponent>",
-                "defaultValue": "(args: SelectComponent) => ({\n        props: args,\n    })"
+                "type": "Story<StatusWidgetComponent>",
+                "defaultValue": "(\r\n  args: StatusWidgetComponent\r\n) => ({\r\n  props: args,\r\n})"
             },
             {
                 "name": "Template",
@@ -2004,6 +2126,16 @@
                 "deprecationMessage": "",
                 "type": "Story<TabsComponent>",
                 "defaultValue": "(args: TabsComponent) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Warning",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/label/label.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "Warning",
@@ -2103,7 +2235,6 @@
                     "type": "literal type"
                 }
             ],
-<<<<<<< HEAD
             "src/stories/label/label.stories.ts": [
                 {
                     "name": "Danger",
@@ -2140,14 +2271,6 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/stories/label/label.stories.ts",
-=======
-            "src/stories/checkbox/checkbox.stories.ts": [
-                {
-                    "name": "DefaultCheckbox",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/checkbox/checkbox.stories.ts",
->>>>>>> 55608a64475db2400640fc7a8a0f2f4459880821
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -2157,7 +2280,6 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-<<<<<<< HEAD
                     "file": "src/stories/label/label.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
@@ -2169,12 +2291,32 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/stories/label/label.stories.ts",
-=======
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                }
+            ],
+            "src/stories/checkbox/checkbox.stories.ts": [
+                {
+                    "name": "DefaultCheckbox",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/checkbox/checkbox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
                     "file": "src/stories/checkbox/checkbox.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<CheckboxComponent>",
-                    "defaultValue": "(args: CheckboxComponent) => ({\n    props: args,\n})"
+                    "defaultValue": "(args: CheckboxComponent) => ({\r\n    props: args,\r\n})"
                 }
             ],
             "src/stories/input/input.stories.ts": [
@@ -2196,22 +2338,19 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<InputComponent>",
-                    "defaultValue": "(args: InputComponent) => ({\n  props: args,\n})"
+                    "defaultValue": "(args: InputComponent) => ({\r\n  props: args,\r\n})"
                 },
                 {
                     "name": "WithLabel",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/stories/input/input.stories.ts",
->>>>>>> 55608a64475db2400640fc7a8a0f2f4459880821
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
                 }
             ],
-<<<<<<< HEAD
-=======
             "src/stories/select/select.stories.ts": [
                 {
                     "name": "DefaultSelect",
@@ -2231,10 +2370,9 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<SelectComponent>",
-                    "defaultValue": "(args: SelectComponent) => ({\n        props: args,\n    })"
+                    "defaultValue": "(args: SelectComponent) => ({\r\n        props: args,\r\n    })"
                 }
             ],
->>>>>>> 55608a64475db2400640fc7a8a0f2f4459880821
             "src/environments/environment.prod.ts": [
                 {
                     "name": "environment",
@@ -2257,8 +2395,6 @@
                     "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\r\n  production: false\r\n}"
-<<<<<<< HEAD
-=======
                 }
             ],
             "src/stories/notification/notification.stories.ts": [
@@ -2331,7 +2467,38 @@
                     "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
->>>>>>> 55608a64475db2400640fc7a8a0f2f4459880821
+                }
+            ],
+            "src/stories/featured-icon/featured-icon.stories.ts": [
+                {
+                    "name": "Image",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/featured-icon/featured-icon.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Person",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/featured-icon/featured-icon.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/featured-icon/featured-icon.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<FeaturedIconComponent>",
+                    "defaultValue": "(\r\n  args: FeaturedIconComponent\r\n) => ({\r\n  props: args,\r\n})"
                 }
             ],
             "src/stories/Button.stories.ts": [
@@ -2604,6 +2771,18 @@
                     "deprecationMessage": "",
                     "type": "Story<Page>",
                     "defaultValue": "(args: Page) => ({\r\n  props: args,\r\n})"
+                }
+            ],
+            "src/stories/status-widget/status-widget.stories.ts": [
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/status-widget/status-widget.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<StatusWidgetComponent>",
+                    "defaultValue": "(\r\n  args: StatusWidgetComponent\r\n) => ({\r\n  props: args,\r\n})"
                 }
             ]
         },
@@ -2934,6 +3113,45 @@
                 "status": "low"
             },
             {
+                "filePath": "src/stories/featured-icon/featured-icon.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "FeaturedIconComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/featured-icon/featured-icon.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Image",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/featured-icon/featured-icon.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Person",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/featured-icon/featured-icon.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/stories/header.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -2943,22 +3161,6 @@
                 "status": "low"
             },
             {
-<<<<<<< HEAD
-                "filePath": "src/stories/label/label.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "LabelComponent",
-                "coveragePercent": 40,
-                "coverageCount": "2/5",
-                "status": "medium"
-            },
-            {
-                "filePath": "src/stories/label/label.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Danger",
-=======
                 "filePath": "src/stories/input/input.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -2973,13 +3175,50 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "DefaultInput",
->>>>>>> 55608a64475db2400640fc7a8a0f2f4459880821
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
             },
             {
-<<<<<<< HEAD
+                "filePath": "src/stories/input/input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/input/input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "WithLabel",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/label/label.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "LabelComponent",
+                "coveragePercent": 40,
+                "coverageCount": "2/5",
+                "status": "medium"
+            },
+            {
+                "filePath": "src/stories/label/label.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Danger",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/stories/label/label.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
@@ -3011,9 +3250,6 @@
             },
             {
                 "filePath": "src/stories/label/label.stories.ts",
-=======
-                "filePath": "src/stories/input/input.stories.ts",
->>>>>>> 55608a64475db2400640fc7a8a0f2f4459880821
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -3023,14 +3259,11 @@
                 "status": "low"
             },
             {
-<<<<<<< HEAD
                 "filePath": "src/stories/label/label.stories.ts",
-=======
-                "filePath": "src/stories/input/input.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "WithLabel",
+                "name": "Warning",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -3106,7 +3339,6 @@
             },
             {
                 "filePath": "src/stories/notification/notification.stories.ts",
->>>>>>> 55608a64475db2400640fc7a8a0f2f4459880821
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -3145,6 +3377,25 @@
             },
             {
                 "filePath": "src/stories/select/select.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/status-widget/status-widget.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "StatusWidgetComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/status-widget/status-widget.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",

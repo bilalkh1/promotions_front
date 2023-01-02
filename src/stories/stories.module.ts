@@ -12,6 +12,8 @@ import BadgeComponent from './badge/badge.component';
 import TabsComponent from './tabs/tabs.component';
 import NotificationComponent from './notification/notification.component';
 import StepperComponent from './stepper/stepper.component';
+import { FeaturedIconComponent } from './featured-icon/featured-icon.component';
+import { StatusWidgetComponent } from './status-widget/status-widget.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import StepperComponent from './stepper/stepper.component';
     TabsComponent,
     NotificationComponent,
     StepperComponent,
+    FeaturedIconComponent,
+    StatusWidgetComponent,
   ],
   imports: [CommonModule],
   exports: [
